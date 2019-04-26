@@ -1,0 +1,22 @@
+<?php
+
+namespace DummyNamespace;
+
+class DummyClass extends Repository implements SpecificInterface
+{
+    // SpecificInterface替换成repository 要实现的接口
+    // 比如UserRepository就要去实现UserRepositoryInterface，
+    // 然后去RepositoryServiceProvider中将接口与实现的注册到服务容器中
+    // 这样才能保证数据访问层与外界隔离
+    // 以前写在Model里的关于数据库字段的类型常量也要放到interface中去
+
+    /**
+     * Specify Model class name
+     *
+     * @return string
+     */
+    public function model() : string
+    {
+        //TODO: return model class name with full namespace;
+    }
+}
