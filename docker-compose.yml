@@ -9,7 +9,6 @@ services:
     working_dir: /var/www
     volumes:
       - ./:/var/www
-    command: ./start-app-container.sh
     environment:
 #      # laravel uses Dotenv to set and load environment variables,by default it will not
 #      # overwrite existing environment variables. So we set env variables for app container here
