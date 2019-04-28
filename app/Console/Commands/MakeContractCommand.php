@@ -18,7 +18,7 @@ class MakeContractCommand extends  GeneratorCommand
      * @var string
      */
     protected $signature = 'make:contract {name : contracts name} 
-                            {--sub-path= : sub path in repository directory}';
+                            {--sub-path= : sub path in contracts directory}';
     /**
      * The console command description.
      *
