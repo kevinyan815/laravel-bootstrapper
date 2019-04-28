@@ -1,4 +1,9 @@
 A well customized laravel bootstrapper 
 
-- Using domain design theory
-- Integrate with `jwt`, `cors`, `apidoc` etc. 
+### Feature
+
+- United formed api json reposnse
+- Integrate with jwt, cors, apidoc packages
+- Functional api login and jwt authentication middleware
+- Using the thoughts of domain design develop
+- Convinent artisan commands `make:contract`, `make:repository`, `make:service` to relieve you from file creation
