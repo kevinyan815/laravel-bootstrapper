@@ -17,5 +17,28 @@
         "laravel-mix": "^1.0",
         "lodash": "^4.17.4",
         "vue": "^2.5.7"
+    },
+    "apidoc": {
+        "version": "0.1.0",
+        "description": "",
+        "title": "",
+        "url": "",
+        "header": {
+            "title": "ApiDocs",
+            "filename": "apidoc/header.md"
+        },
+        "footer": {
+            "title": "Explanation",
+            "filename": "apidoc/footer.md"
+        },
+        "auth": {
+            "company": "Inc",
+            "rd": [
+                {
+                    "name": "KeivnYan",
+                    "email": "mailto:kevinyan815@gmail.com"
+                }
+            ]
+        }
     }
 }
