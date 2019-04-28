@@ -41,10 +41,11 @@ class LoginController extends Controller
     }
 
     /**
+     * 示例代码 可删除
+     *
      * @param Request $request
      * @return \Illuminate\Http\JsonResponse
      */
-
     /**
      * @param Request $request
      * @return \Illuminate\Http\JsonResponse
@@ -53,19 +54,17 @@ class LoginController extends Controller
      * @api {POST} /api/login 登录接口
      * @apiGroup Auth
      * @apiversion 0.1.0
-     * @apiParam (请求参数:) {String} engineer_code 工程师编号
+     * @apiParam (请求参数:) {String} email 用户邮箱
      * @apiParam (请求参数:) {String} password  密码
-     * @apiParam (请求参数:) {String} captcha  验证码
      *
-     * @apiSuccess (返回字段:) {Number} StatusCode 状态码
+     * @apiSuccess (返回字段:) {Number} statusCode 状态码
      * @apiSuccess (返回字段:) {JSON} message  提示信息
-     * @apiSuccess (返回字段:) {JSON} data  status_code为200时返回的数据包
+     * @apiSuccess (返回字段:) {JSON} data  statusCode为200时返回的数据包
      *
      * @apiParamExample {json} 请求参数示例：
      *   {
-     *     "engineer_code": "A03999",
-     *     "password":"1234qwER",
-     *     "captcha":"afe5i"
+     *     "email": "first@admin.com",
+     *     "password":"123pass",
      *   }
      *
      * @apiSuccessExample 成功时返回的数据:
@@ -76,8 +75,8 @@ class LoginController extends Controller
      *          "info": "Success"
      *      },
      *      "data": {
-     *          "name" "陈雪兵",
-     *          "engineer_code": "A03999"
+     *          "email": ".....",
+     *          ......
      *      }
      *
      *  }
