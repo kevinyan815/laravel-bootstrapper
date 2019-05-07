@@ -3,10 +3,16 @@
 namespace App\Exceptions;
 
 use Exception;
+use Illuminate\Auth\Access\AuthorizationException;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Validation\ValidationException;
+use App\Foundation\Traits\ApiTrait;
 
 class Handler extends ExceptionHandler
 {
+    use ApiTrait;
+
     /**
      * A list of the exception types that are not reported.
      *
